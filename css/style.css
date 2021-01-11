@@ -12,35 +12,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+   display: block;
 }
 body {
-	line-height: 1;
+   line-height: 1;
 }
 ol, ul {
-	list-style: none;
+   list-style: none;
 }
 blockquote, q {
-	quotes: none;
+   quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+   content: '';
+   content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+   border-collapse: collapse;
+   border-spacing: 0;
 }
 a {
     text-decoration: none;
@@ -139,7 +139,7 @@ header {
 .banner-area {
     width: 100%;
     height: 630px;
-    background: url('../images/banner_01.jpg') no-repeat 50% 0;
+    background: url('../images/banner_01.png') no-repeat 50% 0;
 }
 
 .notice {
@@ -234,109 +234,123 @@ header {
 }
 
 
-.introduction{
-    width: 100%;
-    height: 720px;
-    background: url(../images/bg_introduction.png) no-repeat 50% 0;
+
+.introduction {
+   width: 100%;
+   height: 720px;
+   background: url(../images/bg_introduction.png) no-repeat 50% 0;
     border-bottom: 1px solid #e9e9e9;
     position: relative;
 }
 
+.introduction .title {
+    margin-top: -60px;
+    font-size: 32px;
+    color: #111111;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -.5px;
+    -webkit-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
 .introduction .conts-area {
-    padding-top: 80px;
+   padding-top: 80px;
+   position: relative;
+   background: url(../images/bg_introduction.png) no-repeat 50% 0;
+}
+
+.point .bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 171, 107, 0.12);
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+   animation: record-lg 1.5s ease-in-out infinite;
+}
+
+.point-content{
+    width: 960px;
+    margin:0 auto;
     position: relative;
-    background: url(../images/bg_introduction.png) no-repeat 50% 0;
+    top: -50px;
 }
 
-.point .bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,171,107,0.2);
-
-    -webkit-border-radius:50%;
-    border-radius: 50%;
-    animation: record-lg 1.5s ease-in-out infinite;
+.introduction .point {
+   position: absolute;
+   width: 32px;
+   height: 32px;
 }
-
-.introduction .point{
-    position: absolute;
-    width: 32px;
-    height: 32px;
+.introduction .point.point-1 {
+   top: 336px;
+   left: 521px;
 }
-
-.introduction .point.point-1{
-    top: 336px;
-    left: 521px;
+.introduction .point.point-2 {
+   top: 386px;
+   left: 440px;
 }
-.introdcution .point.point-2{
-    top: 386px;
-    left: 440px;
+.introduction .point.point-3 {
+   top: 535px;
+   left: 460px;
 }
-
-.introduction .point.point-3{
-    top: 535px;
-    left: 460px;
+.introduction .point.point-4 {
+   top: 577px;
+   left: 514px;
 }
-.introduction .point.point-4{
-    top: 577px;
-    left: 514px;
-}
-
 .point .bg:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: "";
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    background-color: rgba(0, 171, 107, 0.2);
-
-    -webkit-border-radius:50% !important;
-    border-radius: 50% !important;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: "";
+   width: 20px;
+   height: 20px;
+   margin-top: -10px;
+   margin-left: -10px;
+   background-color: rgba(0, 171, 107, 0.2);
+   -webkit-border-radius: 50% !important;
+   border-radius: 50% !important;
 }
 
-@keyframes record-lg{
-    0% {
-        opacity: 0;
-        transform: scale(.5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1);
-    }
+@keyframes record-lg {
+   0% {
+      opacity: 0;
+      transform: scale(.5);
+   }
+   50% {
+      opacity: 1;
+      transform: scale(1);
+   }
+   100% {
+      opacity: 0;
+      transform: scale(1);
+   }
 }
 
-.point .dot{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    width: 8px;
-    height: 8px;
-    margin-top: -4px;
-    margin-left: -4px;
-    background-color: #00ab6a;
-    border-radius: 50%;
-    animation: dot-effec 1.5s ease-in-out infinite;
-}
-@keyframes dot-effec{
-    0% {
-        opacity: .5;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .5;
-    }
+.point .dot {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 2;
+   width: 8px;
+   height: 8px;
+   margin-top: -4px;
+   margin-left: -4px;
+   background-color: #00ab6a;
+   border-radius: 50%;
+   animation: dot-effec 1.5s ease-in-out infinite;
 }
 
+@keyframes dot-effec {
+   0% {
+      opacity: .5;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: .5;
+   }
+}
