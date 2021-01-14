@@ -409,3 +409,76 @@ header {
     color: #999999;
 }
 
+.app-down{
+    width: 100%;
+    height: 630px;
+    background: url(../images/bg_down.jpg) no-repeat 50% 0;
+}
+
+.app-down .conts-area1{
+    padding-top: 80px;
+    background: url(../images/bg_down.jpg) no-repeat 50% 0;
+}
+.app-down .btn-sec{
+    margin-top: 60px;
+}
+.app-down a + a{
+    margin-left: 20px;
+} 
+
+.conts-area1{
+    text-align: center;
+}
+.app-down .title{
+    font-size: 32px;
+    color: #111111;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -5px;
+    margin-top: 30px;
+}
+footer {
+    width: 100%;
+    height: 250px;
+    background: #000;
+}
+.util1>ul>li{
+    margin-left: 15px;
+    color: white;
+}
+
+.util1>ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 700px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    position: relative;
+}
+.util1>ul>li::after{
+    width: 1px;
+    height: 20px;
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 70px;
+}
+.util>ul>li>:last-child::after{
+    width: 0;
+}
+.company-info{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 300;
+    margin-left: 28px;
+}
+.company-info>ul>li{
+    margin-bottom: 5px;
+}
+.copyright{
+    margin-top: 24px;
+    font-size: 14px;
+    color: #666666;
+    margin-left: 28px;
+}
