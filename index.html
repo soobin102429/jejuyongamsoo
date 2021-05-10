@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주용암수</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,26 +21,33 @@
                 </div>
                 <div id="gnb">
                     <ul class="gnb navi-content">
-                        <li><a href="#">제주용암수란?</a></li>
-                        <li><a href="#">일반주문</a></li>
-                        <li><a href="#">정기배송</a></li>
+                        <li><a href="#" onclick="return false">제주용암수란?</a></li>
+                        <li><a href="#" onclick="return false">일반주문</a></li>
+                        <li><a href="#" onclick="return false">정기배송</a></li>
                     </ul>
                 </div>
             </div>
             <div class="util">
                 <ul class="gnb area-navi">
                     <li><a href="#"><button class="btn-primary">로그인</button></a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">쿠폰사용</a></li>
-                    <li><a href="#" class="txt-primary">대량주문 문의</a></li>
+                    <li><a href="#" onclick="return false">회원가입</a></li>
+                    <li><a href="#" onclick="return false">고객센터</a></li>
+                    <li><a href="#" onclick="return false">쿠폰사용</a></li>
+                    <li><a href="#" onclick="return false" class="txt-primary">대량주문 문의</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <section>
-        <div class="banner-area"></div>
+        <div class="swiper-container mySwiper banner-area">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner-01"></div>
+              <div class="swiper-slide banner-02"></div>
+              <div class="swiper-slide banner-03"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
     </section>
 
     <section class="notice-warp">
@@ -45,8 +57,8 @@
             </div>
             <div class="notice-content">
                 <ul>
-                    <li><a href="#">[이벤트종료] 오리온 친환경 캠페인 - 올바른 분리배출 이벤트</a></li>
-                    <li><a href="#">제주용암수 정식 오픈!!</a></li>
+                    <li style="margin-bottom: 10px;"><a href="#" onclick="return false">[이벤트종료] 오리온 친환경 캠페인 - 올바른 분리배출 이벤트</a></li>
+                    <li><a href="#" onclick="return false">제주용암수 정식오픈!!</a></li>
                 </ul>
             </div>
         </div>
@@ -119,7 +131,7 @@
         <div class="conts-area">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="return false">
                         <h2 class="tit">오늘 밤 주문하면 내일 도착!</h2>
                         <p class="desc">
                             오후 11시까지 결제만 하세요. <br>
@@ -128,7 +140,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="return false">
                         <h2 class="tit">법인/대량 구매</h2>
                         <p class="desc">
                             20팩 이상 구매고객 <br>
@@ -154,21 +166,42 @@
         <div class="conts-area">
             <div class="util1">
                 <ul>
-                    <li><a href="#" target="_blank">회사소개</a></li>
-                    <li><a href="#" target="_blank">개인정보처리방침</a></li>
-                    <li><a href="#" target="_blank">이용약관</a></li>
+                    <li><a href="#" target="_blank" onclick="return false">회사소개</a></li>
+                    <li><a href="#" target="_blank" onclick="return false">개인정보처리방침</a></li>
+                    <li><a href="#" target="_blank" onclick="return false">이용약관</a></li>
                 </ul>
             </div>
        
             <div class="company-info">
             <ul>
                 <li>(주) 오리온 서울특별시 용산구 백범로 90다길 13(문배동)</li>
-                <li>(주) 오리온 대표자 : 이경재 사업자 등록번호 : 709-81-00727 <a href="#" target="blank">사업자정보확인</a></li>
+                <li>(주) 오리온 대표자 : 이경재 사업자 등록번호 : 709-81-00727 <a href="#" target="blank" onclick="return false">사업자정보확인</a></li>
                 <li>통신판매업신고: 2019-서울용산-1143 고객센터 : 080-023-5701 (평일 09:00 ~ 17:30 / 주말, 공휴일 휴무)</li>
             </ul>
             </div>
         <p class="copyright">COPYRIGHT (C) JEJUYONGDAMSOO ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
 </body>
 </html>
